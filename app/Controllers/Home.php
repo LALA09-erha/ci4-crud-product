@@ -5,6 +5,7 @@ use  App\Models\KategoriModel;
 use App\Models\ProdukModel;
 class Home extends BaseController
 {
+    // untuk menampilkan halaman dashboard
     public function index(): string
     {
         // deklarasi model
@@ -21,7 +22,7 @@ class Home extends BaseController
         $produk_dijual = $modelproduk->join('status', 'status.id_status = produk.status_id')->where('status.nama_status', 'bisa dijual')->findAll();
         
 
-
+        // deklarasi variabel
         $data = [
             'title' => 'Dashboard',
             'page' => 'dashboard',
@@ -29,6 +30,7 @@ class Home extends BaseController
             'produk_tidak_dijual' => count($produk_tidak_dijual),
             'produk_dijual' => count($produk_dijual)
         ];
+        // menampilkan halaman dashboard dengan format view
         return view('dashboard/index' , $data);
     }
 }
