@@ -3,7 +3,7 @@
 ## Deskripsi Project ini
 
 - Project ini dibuat dengan framework codeigniter 4 dan menggunakan bootstrap. Karena PHP yang digunakan adalah PHP 8.2 sehingga tidak memungkin menggunakan codeigniter 3
-- Project ini memiliki fitur CRUD pada halaman produk.
+- Project ini memiliki fitur CRUD pada halaman produk lengkap dengan pagination dan filter.
 - Database yang digunakan adalah MySQL
 
 ## Fitur Project ini
