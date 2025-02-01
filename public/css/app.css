@@ -1,0 +1,10 @@
+#results {
+  padding: 20px;
+  border: 1px solid;
+  background: #ccc;
+}
+#chart {
+  max-width: 100%;
+}
+
+/* Notifications */
